@@ -13,8 +13,8 @@ module.exports = {
         return res.json(user);
     },
 
-    async insert(req, res) {
-        const user = await User.insert(req.body);
+    async create(req, res) {
+        const user = await User.create(req.body);
         return res.json(user);
     },
 

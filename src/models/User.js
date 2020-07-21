@@ -8,7 +8,11 @@ const UserSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true
-    }
+    },
+    posts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Post'
+    }]
 });
 
 mongoose.model('User', UserSchema);

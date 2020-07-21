@@ -12,6 +12,6 @@ mongoose.connect(
 
 requireDir('./src/models');
 
-app.use('/', require("./src/routes"))
+app.use('/', require("./src/routes"));
 
 app.listen(3001);
